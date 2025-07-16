@@ -1,46 +1,43 @@
-[![style: lint](https://img.shields.io/badge/style-lint-4BC0F5.svg)](https://pub.dev/packages/lint)
+# UNICE (Code Skeleton – Flutter)
 
-# UNICE
+UNICE is a **mobile communication app** designed for seamless **audio/video calling** and **live translation** features, built using **Flutter** and third-party SDKs.
 
-Unice is a Mobile app for video/audio calling and translation.
+> ⚠️ _This version is a redacted code skeleton. All sensitive business logic, API integrations, and UI implementations have been removed to respect client confidentiality._  
+> This repo is for **portfolio and architectural demonstration** purposes only.
 
-## Installation
+---
 
-First you need to setup flutter on your system. This link will guide you how to do
-that. [Install Flutter](https://flutter.dev/docs/get-started/install)
+## 🚀 Project Highlights
 
-After install check if your installation is successful or not by running this command in terminal /
-cmd.
+- Cross-platform Flutter architecture
+- Modular separation of core features: calling, translation, utilities
+- Setup ready for integrating video/audio SDKs (e.g., Agora, Twilio, Jitsi)
+- Clean dependency injection and state management practices
+- Environment-based configurations for dev/prod
+- Organized structure for maintainability and scalability
 
-```bash
-flutter doctor -v
-```
+---
 
-After setting up the environment clone this project to your desired location.
+## 🚧 What's Included
+ - Clean modular folder layout
+ - Environment-based build system (prod, development)
+ - Sample main entry points for each flavor
+ - CI-ready structure for scalable Flutter apps
+ - Modular architecture for scalable development
+ - Dependency Injection (DI) structure with di.config.dart, register_modules.dart
+ - Isolated network layer using dio_wrapper
+ - Folder-based separation of datasources, repository, usecases wallet_adapter_service, permissions, chat_scoket, stream_calling_service and l10n
+ - Strong use of reusable widgets and utils
+ - Environment-specific configuration using base_env.dart
+ - Custom routing with go_router
 
-```bash
-git clone https://bitbucket.org/rnssol/unice-app.git
-```
+## ❌ What's Removed (for confidentiality)
+ - Business logic, UI code, API calls
+ - Client assets, endpoints, auth flows
+ - Actual functionality (this is not a runnable app)
 
-After cloning move to the installation folder and run
-
-```bash
-flutter clean
-flutter pub get
-dart run build_runner build --delete-conflicting-outputs
-```
-
-Code setup is compleded at this stage.
-
-## Usage
-
-For building the android and iOS builds for each one of them is given below
-
-```bash
-flutter build apk  --release   // For android
-```
-
-## Contributing
-
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would
-like to change.
+## 🚀 Tech Stack
+ - Flutter (Stable Channel)
+ - Dart
+ - Flavor-based environment config
+ - Lint for code consistency (package)
